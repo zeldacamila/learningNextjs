@@ -16,7 +16,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <header className="header-custom">
+          <h1 className="header-title">Royal Murlocs</h1>
+        </header>
+        <div>{children}</div>
+      </body>
     </html>
   );
 }
